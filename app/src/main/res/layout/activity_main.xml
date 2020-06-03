@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/shape_header"
+        android:gravity="center_horizontal"
+        android:paddingTop="19dp"
+        android:paddingBottom="19dp"
+        android:text="@string/str_sms_verification"
+        android:textColor="@color/colorTitle"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_phone_num"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="91dp"
+        android:inputType="phone"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_item"
+        android:drawableStart="@mipmap/icon_phone_num"
+        android:drawableLeft="@mipmap/icon_phone_num"
+        android:drawablePadding="9dp"
+        android:hint="@string/str_phone_num"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textColorHint="@color/colorText"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_verification_code"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:inputType="number"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/shape_item"
+        android:drawableStart="@mipmap/icon_verification_code"
+        android:drawableLeft="@mipmap/icon_verification_code"
+        android:drawablePadding="9dp"
+        android:hint="@string/str_verification_code"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:textColorHint="@color/colorText"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/btn_get_verification"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_phone_num" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_get_verification"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_item"
+        android:onClick="getVerificationCode"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="@string/str_get_verification_code"
+        android:textColor="@color/colorText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/et_verification_code"
+        app:layout_constraintTop_toBottomOf="@id/et_phone_num" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_submit_verification"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_button"
+        android:onClick="submitVerificationCode"
+        android:text="@string/str_start_sms_verification"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_verification_code" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorSubmit">#03A9F4</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#464646</color>
+    <color name="colorBlue">#04cb94</color>
+    <color name="colorTitle">#31333e</color>
+    <color name="colorHeader">#e7e7e7</color>
+    <color name="colorShape">#b1b1b1</color>
+    <color name="colorText">#9c9c9c</color>
+
+    <color name="colorReValidation">#333333</color>
+    <color name="colorValidation">#F5F7F9</color>
+    <color name="colorValidationStroke">#a7b6c7</color>
+</resources>

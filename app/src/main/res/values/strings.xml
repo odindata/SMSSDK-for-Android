@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">OdinSMS</string>
+
+    <string name="str_phone_num">手机号</string>
+    <string name="str_verification_code">验证码</string>
+    <string name="str_get_verification_code">获取验证码</string>
+    <string name="str_re_get_verification_code">%d秒后重新发送</string>
+    <string name="str_sms_verification">短信验证</string>
+    <string name="str_start_sms_verification">验证</string>
+    <string name="str_re_start_sms_verification">重新验证</string>
+    <string name="str_sms_verification_success">验证成功</string>
+</resources>
