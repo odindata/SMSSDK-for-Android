@@ -60,6 +60,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-//    implementation 'com.odin.sms:OdinSMS:1.0.1_beta'
+    implementation 'com.odin.sms:SMSSDK:1.0.1_beta'
     implementation 'com.gyf.immersionbar:immersionbar:3.0.0-beta05'
 }

@@ -33,7 +33,7 @@ allprojects {
 
 
 ```groovy
-implementation 'com.odin.sms:OdinSMS:1.0.2_beta'
+implementation 'com.odin.sms:SMSSDK:1.0.2_beta'
 ```
 
 ### 权限申请
